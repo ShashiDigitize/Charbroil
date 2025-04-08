@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/api/health', (req, res) => {
-  res.status(200).send({ message: 'server healthy!' });
+  res.status(200).send({ message: 'server healthy2!' });
 });
 
 
@@ -132,4 +132,4 @@ app.post('/api/getDimensions', async (req, res) => {
 });
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.listen(PORT, () => console.log('listening on port: ', PORT));
+app.listen(PORT, () => console.log('listening on port22: ', PORT));
