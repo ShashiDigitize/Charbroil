@@ -18,7 +18,6 @@ app.get('/api/health', (req, res) => {
   res.status(200).send({ message: 'server healthy2!' });
 });
 
-
 const grills = [
   {
       "Name": "3-burner",
