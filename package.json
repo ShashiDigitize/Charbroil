@@ -5,6 +5,7 @@
     "@google/generative-ai": "^0.24.0",
     "@threekit-tools/treble": "^0.0.97",
     "@threekit-tools/treble-scripts": "0.0.44",
+    "cjs-loader": "^0.1.0",
     "cors": "2.8.5",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
@@ -19,11 +20,11 @@
   },
   "main": "build/index.js",
   "scripts": {
-    "start": "treble-scripts start",
+    "serve": "treble-scripts start",
     "build": "treble-scripts build",
     "format": "prettier --write ./src",
     "lint": "eslint ./src",
-    "serve": "node server"
+    "start": "node server.js"
   },
   "devDependencies": {
     "webpack-dev-server": "^5.2.1"
